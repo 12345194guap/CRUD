@@ -59,59 +59,59 @@
 ***
 ### 6. HTTP запрос/ответ
 **Запрос**  
-http://crud/index.php
-
-Host: crud
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
-Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate
-Referer: http://crud/index.php
-Connection: keep-alive
-Cookie: PHPSESSID=fq0r9b7iovgaeql7smsupc9jbap9i91e
-Upgrade-Insecure-Requests: 1
-
-**Ответ**
-GET: HTTP/1.1 200 OK
-Date: Sun, 25 Dec 2022 16:19:56 GMT
-Server: Apache
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate
-Pragma: no-cache
-Keep-Alive: timeout=120, max=998
-Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=UTF-8
-
-**Запрос**
-http://crud/php/send_message.php
-
-Host: crud
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
-Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 13
-Origin: http://crud
-Connection: keep-alive
-Referer: http://crud/index.php
-Cookie: PHPSESSID=fq0r9b7iovgaeql7smsupc9jbap9i91e
-Upgrade-Insecure-Requests: 1
-text=cdscdcds
-
-**Ответ**
-POST: HTTP/1.1 302 Found
-Date: Sun, 25 Dec 2022 16:20:52 GMT
-Server: Apache
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate
-Pragma: no-cache
-Location: ../index.php
-Content-Length: 0
-Keep-Alive: timeout=120, max=992
-Connection: Keep-Alive
-Content-Type: text/html; charset=UTF-8
+http://crud/index.php  
+  
+Host: crud  
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0  
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8  
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3  
+Accept-Encoding: gzip, deflate  
+Referer: http://crud/index.php  
+Connection: keep-alive  
+Cookie: PHPSESSID=fq0r9b7iovgaeql7smsupc9jbap9i91e  
+Upgrade-Insecure-Requests: 1  
+  
+**Ответ**  
+GET: HTTP/1.1 200 OK  
+Date: Sun, 25 Dec 2022 16:19:56 GMT  
+Server: Apache  
+Expires: Thu, 19 Nov 1981 08:52:00 GMT  
+Cache-Control: no-store, no-cache, must-revalidate  
+Pragma: no-cache  
+Keep-Alive: timeout=120, max=998  
+Connection: Keep-Alive  
+Transfer-Encoding: chunked  
+Content-Type: text/html; charset=UTF-8  
+  
+**Запрос**  
+http://crud/php/send_message.php  
+  
+Host: crud  
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0  
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8  
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3  
+Accept-Encoding: gzip, deflate  
+Content-Type: application/x-www-form-urlencoded  
+Content-Length: 13  
+Origin: http://crud  
+Connection: keep-alive  
+Referer: http://crud/index.php  
+Cookie: PHPSESSID=fq0r9b7iovgaeql7smsupc9jbap9i91e  
+Upgrade-Insecure-Requests: 1  
+text=cdscdcds  
+  
+**Ответ**  
+POST: HTTP/1.1 302 Found  
+Date: Sun, 25 Dec 2022 16:20:52 GMT  
+Server: Apache  
+Expires: Thu, 19 Nov 1981 08:52:00 GMT  
+Cache-Control: no-store, no-cache, must-revalidate  
+Pragma: no-cache  
+Location: ../index.php  
+Content-Length: 0  
+Keep-Alive: timeout=120, max=992  
+Connection: Keep-Alive  
+Content-Type: text/html; charset=UTF-8  
 ***
 ### 7. Значимые фрагменты кода
 **Инициализация базы данных, создание таблиц (db.php)**
