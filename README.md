@@ -176,7 +176,7 @@ function get_comments($id) {
 }
 ```
 ***
-**Изменение кол-ва лайков (change_likes.php)**
+**Внесение кол-ва лайков в БД (change_likes.php)**
 ```php
 require_once 'db.php';
 global $pdo;
@@ -200,4 +200,28 @@ catch (PDOException $e) {
 }
 header('Content-Type: text/html; charset=utf-8');
 echo $likes;
+```
+**Изменение кол-ва лайков Ajax (change_likes.php)**
+```
+$(".change_likes").submit(function (e)
+{
+    e.preventDefault();
+    let th = $(this);
+    var likes = $("#likes");
+    var id = $("#id");
+    let btn = th.find('#btn_like');
+    $.ajax({
+        url: 'php/change_likes.php',
+        type: "POST",
+        cache: false,   
+        data: th.serialize(),
+        success: function(data) {
+            th.find(".output_likes").text(data);
+            btn.addClass('active');
+        },
+        error: function(){
+            alert('Error');
+        }
+    });
+});
 ```
