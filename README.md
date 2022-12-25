@@ -182,7 +182,7 @@ require_once 'db.php';
 global $pdo;
 
 $id = $_POST['id'];
-$likes = $_POST['post_likes'];
+$likes = $_POST['likes'];
 $likes++;
 
 try {
@@ -198,4 +198,6 @@ catch (PDOException $e) {
     print_r("[ERROR] " . $e->getMessage());
     die();
 }
+header('Content-Type: text/html; charset=utf-8');
+echo $likes;
 ```
