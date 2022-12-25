@@ -202,7 +202,7 @@ header('Content-Type: text/html; charset=utf-8');
 echo $likes;
 ```
 ***
-**Изменение кол-ва лайков Ajax (change_likes.php)**
+**Изменение кол-ва лайков Ajax (main.js)**
 ```php
 $(".change_likes").submit(function (e)
 {
