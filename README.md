@@ -201,8 +201,9 @@ catch (PDOException $e) {
 header('Content-Type: text/html; charset=utf-8');
 echo $likes;
 ```
+***
 **Изменение кол-ва лайков Ajax (change_likes.php)**
-```
+```php
 $(".change_likes").submit(function (e)
 {
     e.preventDefault();
