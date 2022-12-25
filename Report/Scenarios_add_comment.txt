@@ -1,0 +1,9 @@
+actor "Пользователь" as user
+database "БД" as db
+user-->db:Добавление комментария
+box right of db:Валидация комментария
+db->user:Нельзя добавить пустой комментарий
+db->user:Размер комментария превышает 400  символов
+activate db
+box right of db:Вставка в таблицу comments комментария и времени добавления
+deactivate db

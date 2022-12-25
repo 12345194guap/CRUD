@@ -1,0 +1,10 @@
+actor "Пользователь" as user
+database "БД" as db
+user-->db:Отправка сообщения
+
+box right of db:Валидация сообщения
+db->user:Нельзя отправить пустое сообщение
+db->user:Размер сообщения превышает 600 символов
+activate db
+box right of db:Добавление сообщения, кол-ва лайков, времени отправки в таблицу messages
+deactivate db
